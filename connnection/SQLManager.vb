@@ -1,4 +1,4 @@
-﻿Imports System.Data.SqlClient
+Imports System.Data.SqlClient
 
 Public Class SQLManager
     Private SQLCon As SqlConnection
@@ -235,6 +235,8 @@ Public Class SQLManager
         SQLParams.Add(newParam)
     End Sub
 
+
+
     Public Sub FlushParams()
         SQLParams.Clear()
     End Sub
@@ -252,4 +254,5 @@ Public Class SQLManager
             End If
         End If
     End Sub
+
 End Class
